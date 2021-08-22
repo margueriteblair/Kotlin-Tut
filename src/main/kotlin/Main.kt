@@ -9,22 +9,22 @@ fun main() {
     val str = "Kotlin is the best language!"
     println(str.toUpperCase())
 
-    val y = 1+1
-    if (y == 2) {
-        println("y is 2")
-    } else if (y == 3) {
-        println("y is 3")
-    } else {
-        println("y isn't 2 or 3")
-    }
-
-    val z: Int? = null
+//    val y = 1+1
+//    if (y == 2) {
+//        println("y is 2")
+//    } else if (y == 3) {
+//        println("y is 3")
+//    } else {
+//        println("y isn't 2 or 3")
+//    }
+    print("Put number1: ")
     val number1 = readLine() ?: "0"
+    print("Put number2: ")
     val number2 = readLine() ?: "0"
     val result = number1.toInt() + number2.toInt()
     println(result)
 
     val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
-    println(shoppingList[1])
+    println(shoppingList[0])
 
 }
