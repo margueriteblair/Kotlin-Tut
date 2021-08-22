@@ -55,6 +55,8 @@ fun main() {
 //    }
     val xPrime = isEven(5)
     println(xPrime)
+    val yPrime = 3
+    println(yPrime.isOdd())
 }
 
 fun print10Numbers() {
@@ -63,6 +65,10 @@ fun print10Numbers() {
     }
 }
 
-fun isEven(number: Int): Boolean {
+fun isEven(number: Int = 10): Boolean { //this is a default param in case we don't pass anything
     return number % 2 == 0
+}
+
+fun Int.isOdd(): Boolean { //extension function
+    return this % 2 == 1
 }
