@@ -53,11 +53,16 @@ fun main() {
 //            println("x isn't in the range of 1 to 10")
 //        }
 //    }
-    print10Numbers()
+    val xPrime = isEven(5)
+    println(xPrime)
 }
 
 fun print10Numbers() {
     for(i in 1..10) {
         println(i)
     }
+}
+
+fun isEven(number: Int): Boolean {
+    return number % 2 == 0
 }
