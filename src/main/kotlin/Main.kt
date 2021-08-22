@@ -69,6 +69,13 @@ fun main() {
             println("Roooooar")
         }
     }
+
+    val list = listOf("Kotlin", "Java", "Scala")
+    val count = list.count { currString ->
+        currString.length >= 5
+    }
+
+    println(count)
 }
 
 fun print10Numbers() {
