@@ -18,4 +18,9 @@ fun main() {
         println("y isn't 2 or 3")
     }
 
+    val z: Int? = null
+    val number1 = readLine()
+    val number2 = readLine()
+    val result = number1!!.toInt() + number2!!.toInt()
+
 }
