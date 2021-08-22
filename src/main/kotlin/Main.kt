@@ -19,8 +19,12 @@ fun main() {
     }
 
     val z: Int? = null
-    val number1 = readLine()
-    val number2 = readLine()
-    val result = number1!!.toInt() + number2!!.toInt()
+    val number1 = readLine() ?: "0"
+    val number2 = readLine() ?: "0"
+    val result = number1.toInt() + number2.toInt()
+    println(result)
+
+    val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
+    println(shoppingList[1])
 
 }
