@@ -1,6 +1,8 @@
 fun main() {
-    var x: Int = 3
-    println("The value of x is $x")
-    x = 4
-    println("The value of x is now $x")
+    val wholeNumber = 3
+    val bigNumber = 3L
+    val preciseDecimal = 3.33
+    val decimal = 3.33f
+    val iLovePizza = true
+
 }
