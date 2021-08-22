@@ -31,20 +31,33 @@ fun main() {
     cocktailList.add("Strawberry")
     //while loop & for loop in kotlin
 
-    var counter = 0
-    while(counter < cocktailList.size) {
-        println(cocktailList[counter])
-        counter++
-    }
-    cocktailList.add("Passionfruit Martini")
+//    var counter = 0
+//    while(counter < cocktailList.size) {
+//        println(cocktailList[counter])
+//        counter++
+//    }
+//    cocktailList.add("Passionfruit Martini")
+//
+//    for(cocktail in cocktailList) {
+//        println(cocktail)
+//    }
 
-    for(cocktail in cocktailList) {
-        println(cocktail)
-    }
+//    for (i in 1..100) {
+//        println(i)
+//    }
+//    val xPrime = 3
+//    when(xPrime) {
+//        in 1..2 -> println("x is between 1 and 2")
+//        in 3..10 -> println("x is between 3 and 10")
+//        else -> {
+//            println("x isn't in the range of 1 to 10")
+//        }
+//    }
+    print10Numbers()
+}
 
-    for (i in 1..100) {
+fun print10Numbers() {
+    for(i in 1..10) {
         println(i)
     }
-
-
 }
