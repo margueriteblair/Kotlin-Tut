@@ -72,7 +72,7 @@ fun main() {
 
     val list = listOf("Kotlin", "Java", "Scala")
     val count = list.count { currString ->
-        currString.length >= 5
+        currString.length >= 5 //predicate to ensure criteria of lambda is met
     }
 
     println(count)
