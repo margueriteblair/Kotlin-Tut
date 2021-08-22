@@ -23,12 +23,12 @@ fun main() {
 //    val result = number1.toInt() + number2.toInt()
 //    println(result)
 
-    val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
-    println(shoppingList[0])
+//    val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
+//    println(shoppingList[0])
     //two types of lists in kotlin - mutable and immutable lists
     //we can't change items in an immutable list
-    val cocktailList = mutableListOf("Basil", "Tomato/Grapefruit", "Summer Cup")
-    cocktailList.add("Strawberry")
+//    val cocktailList = mutableListOf("Basil", "Tomato/Grapefruit", "Summer Cup")
+//    cocktailList.add("Strawberry")
     //while loop & for loop in kotlin
 
 //    var counter = 0
@@ -53,10 +53,12 @@ fun main() {
 //            println("x isn't in the range of 1 to 10")
 //        }
 //    }
-    val xPrime = isEven(5)
-    println(xPrime)
-    val yPrime = 3
-    println(yPrime.isOdd())
+//    val xPrime = isEven(5)
+//    println(xPrime)
+//    val yPrime = 3
+//    println(yPrime.isOdd())
+
+    val dog = Animal("Margie")
 }
 
 fun print10Numbers() {
