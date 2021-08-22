@@ -58,7 +58,11 @@ fun main() {
 //    val yPrime = 3
 //    println(yPrime.isOdd())
 
-    val dog = Animal("Margie")
+    val dog = Dog()
+    dog.bark()
+
+    val cat = Cat()
+    cat.meow()
 }
 
 fun print10Numbers() {
