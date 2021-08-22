@@ -70,11 +70,10 @@ fun main() {
         }
     }
 
-    val list = listOf("Kotlin", "Java", "Scala")
-    val count = list.count { currString ->
+    val list = listOf("Kotlin", "Java", "Scala", "Haskell")
+    val count = list.customCount { currString ->
         currString.length >= 5 //predicate to ensure criteria of lambda is met
     }
-
     println(count)
 }
 
@@ -90,4 +89,17 @@ fun isEven(number: Int = 10): Boolean { //this is a default param in case we don
 
 fun Int.isOdd(): Boolean { //extension function
     return this % 2 == 1
+}
+
+//we extend the list of type string and make an extension function called "custom count"
+//custom count takes a lambda func as a param, it's of type string as a param and returns a boolean
+//custom count as a whole function returns an integer
+fun List<String>.customCount(function: (String) -> Boolean): Int {
+    var counter = 0
+    for(string in this) {
+        if (function(string)) { //if our predicate function returns true then execute this code
+            counter++
+        }
+    }
+    return counter
 }
