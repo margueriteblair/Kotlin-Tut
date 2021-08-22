@@ -59,10 +59,16 @@ fun main() {
 //    println(yPrime.isOdd())
 
     val dog = Dog()
-    dog.bark()
+    dog.makeSound()
 
     val cat = Cat()
-    cat.meow()
+    cat.makeSound()
+
+    val bear = object : Animal("Camembear") {
+        override fun makeSound() {
+            println("Roooooar")
+        }
+    }
 }
 
 fun print10Numbers() {
