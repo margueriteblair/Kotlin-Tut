@@ -1,4 +1,4 @@
-open class Animal(
+abstract class Animal(
     val name: String,
     val legCount: Int = 4 //4 by default
 
@@ -7,4 +7,6 @@ open class Animal(
         //init block is the block of code that will be executed whenenver we make a new instance :)
         println("Hello, my name is $name")
     }
+
+    abstract fun makeSound()
 }
