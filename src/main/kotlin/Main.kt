@@ -17,14 +17,24 @@ fun main() {
 //    } else {
 //        println("y isn't 2 or 3")
 //    }
-    print("Put number1: ")
+
     val number1 = readLine() ?: "0"
-    print("Put number2: ")
     val number2 = readLine() ?: "0"
     val result = number1.toInt() + number2.toInt()
     println(result)
 
     val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
     println(shoppingList[0])
+    //two types of lists in kotlin - mutable and immutable lists
+    //we can't change items in an immutable list
+    val shoppingList2 = mutableListOf("Basil", "Tomato/Grapefruit", "Summer Cup")
+    shoppingList2.add("Strawberry")
+    //while loop & for loop in kotlin
+
+    var counter = 0
+    while(counter < shoppingList2.size) {
+        println(shoppingList2[counter])
+        counter++
+    }
 
 }
