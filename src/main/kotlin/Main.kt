@@ -18,23 +18,33 @@ fun main() {
 //        println("y isn't 2 or 3")
 //    }
 
-    val number1 = readLine() ?: "0"
-    val number2 = readLine() ?: "0"
-    val result = number1.toInt() + number2.toInt()
-    println(result)
+//    val number1 = readLine() ?: "0"
+//    val number2 = readLine() ?: "0"
+//    val result = number1.toInt() + number2.toInt()
+//    println(result)
 
     val shoppingList = listOf<String>("Lamb", "Toilet Paper", "Cereal")
     println(shoppingList[0])
     //two types of lists in kotlin - mutable and immutable lists
     //we can't change items in an immutable list
-    val shoppingList2 = mutableListOf("Basil", "Tomato/Grapefruit", "Summer Cup")
-    shoppingList2.add("Strawberry")
+    val cocktailList = mutableListOf("Basil", "Tomato/Grapefruit", "Summer Cup")
+    cocktailList.add("Strawberry")
     //while loop & for loop in kotlin
 
     var counter = 0
-    while(counter < shoppingList2.size) {
-        println(shoppingList2[counter])
+    while(counter < cocktailList.size) {
+        println(cocktailList[counter])
         counter++
     }
+    cocktailList.add("Passionfruit Martini")
+
+    for(cocktail in cocktailList) {
+        println(cocktail)
+    }
+
+    for (i in 1..100) {
+        println(i)
+    }
+
 
 }
